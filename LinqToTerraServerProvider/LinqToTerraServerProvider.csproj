@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Visitors\Evaluator.cs" />
+    <Compile Include="Helpers\TypeSystem.cs" />
+    <Compile Include="Visitors\InnermosetWhereFinder.cs" />
+    <Compile Include="Model\Place.cs" />
     <Compile Include="QueryableTerraServerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\TerraServerReference\Reference.cs">
@@ -49,6 +53,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="TerraServerQueryContext.cs" />
     <Compile Include="TerraServerQueryProvider.cs" />
   </ItemGroup>
   <ItemGroup>
