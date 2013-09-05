@@ -23,6 +23,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinLinqTests", "MinLinqTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToTerraServerProvider", "LinqToTerraServerProvider\LinqToTerraServerProvider.csproj", "{487ED917-608B-40F1-9908-ADB093869A37}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServices", "WebServices", "{96EE277E-1F79-49EB-99E4-A60D868E3BC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSocketHttpListener", "WebSocketHttpListener", "{267610AC-CD5B-479E-BAC4-5FA888C31136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +139,16 @@ Global
 		{487ED917-608B-40F1-9908-ADB093869A37}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{487ED917-608B-40F1-9908-ADB093869A37}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{487ED917-608B-40F1-9908-ADB093869A37}.Release|x86.ActiveCfg = Release|Any CPU
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Debug|x86.ActiveCfg = Debug|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Debug|x86.Build.0 = Debug|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Release|Any CPU.ActiveCfg = Release|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Release|Mixed Platforms.Build.0 = Release|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Release|x86.ActiveCfg = Release|x86
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,5 +157,7 @@ Global
 		{098102B4-E5BB-4F27-822D-E50B7882DE74} = {0C1FCD26-F888-4143-9CCE-9D6CCE9C666C}
 		{58DA3378-AE96-4F85-A35C-07324CDF41DD} = {0C1FCD26-F888-4143-9CCE-9D6CCE9C666C}
 		{EFCC3945-5C16-4171-BA68-F208661CD94B} = {0C1FCD26-F888-4143-9CCE-9D6CCE9C666C}
+		{267610AC-CD5B-479E-BAC4-5FA888C31136} = {96EE277E-1F79-49EB-99E4-A60D868E3BC7}
+		{34981B0B-008F-4773-9C20-D7BC0D7EE8C8} = {267610AC-CD5B-479E-BAC4-5FA888C31136}
 	EndGlobalSection
 EndGlobal
