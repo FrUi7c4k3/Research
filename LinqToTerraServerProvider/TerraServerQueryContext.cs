@@ -9,7 +9,10 @@ using LinqToTerraServerProvider.Visitors;
 namespace LinqToTerraServerProvider
 {
 	/// <summary>
-	/// Knows 
+	/// http://msdn.microsoft.com/en-us/library/bb546158(v=vs.90).aspx/html 
+	/// http://msdn.microsoft.com/en-us/library/bb882521(v=vs.90).aspx/html
+	/// http://www.blackwasp.co.uk/Visitor_3.aspx
+	/// http://msdn.microsoft.com/en-us/library/bb882637(v=vs.90).aspx/html
 	/// </summary>
 	internal class TerraServerQueryContext
 	{

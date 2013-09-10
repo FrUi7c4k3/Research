@@ -6,6 +6,9 @@ using Observables.DictionarySuggestService;
 
 namespace Observables
 {
+	/// <summary>
+	/// http://www.introtorx.com/content/v1.0.10621.0/04_CreatingObservableSequences.html
+	/// </summary>
 	public class ObservableSequences
 	{
 		DictServiceSoapClient _svc = new DictServiceSoapClient("DictServiceSoap"); 

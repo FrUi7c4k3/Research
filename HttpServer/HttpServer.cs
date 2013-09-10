@@ -8,7 +8,15 @@ using System.Web.Routing;
 
 namespace Server
 {
-	public class HttpServer
+	/// <summary>
+	/// See:
+	/// http://joseoncode.com/2011/06/17/event-driven-http-server-in-c-with-rx-and-httplistener/	- Explanation on blog
+	/// https://bitbucket.org/jfromaniello/asynchttplistener													- Code for this example
+	/// https://github.com/jfromaniello/Anna																		- Follow up on this with an actual implementation
+	/// http://joseoncode.com/2011/07/22/long-polling-chat-with-anna/										- Follow on the previous implementation
+	/// </summary>
+	
+	public class HttpServer : IObservable<RequestContext>
 	{
 		private readonly HttpListener _listener;
 		private readonly IObservable<RequestContext> _stream;
@@ -23,14 +31,26 @@ namespace Server
 
 		private IObservable<RequestContext> ObservableHttpContext()
 		{
-			return Observable.Create<RequestContext>(obs =>
-									  Observable.FromAsyncPattern<HttpListenerContext>(_listener.BeginGetContext, _listener.EndGetContext)()
+			//_listener.BeginGetContext(ar =>	{
+			//                                    var state = ar.AsyncState as HttpListener;
+			//                                    HttpListenerContext context = state.EndGetContext(ar);
+			//                                 }, _listener);
+			Func<IObservable<HttpListenerContext>> source = Observable.FromAsyncPattern<HttpListenerContext>(_listener.BeginGetContext, _listener.EndGetContext);
+			IObservable<RequestContext> stream = Observable.Create<RequestContext>(obs => source().Subscribe(obs())); // WTF ?!
+			
+			return Observable.Create<RequestContext>(obs => 
+												Observable.FromAsyncPattern<HttpListenerContext>(_listener.BeginGetContext, _listener.EndGetContext)()
 													.Select(c => new RequestContext(c.Request, c.Response))
 													.Subscribe(obs))
 								  .Repeat()
 								  .Retry()
 								  .Publish()
 								  .RefCount();
+		}
+
+		public IDisposable Subscribe(IObserver<RequestContext> observer)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }
