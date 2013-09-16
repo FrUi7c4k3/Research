@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpServer", "HttpServer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonBlockingHttpServer", "NonBlockingHttpServer\NonBlockingHttpServer.csproj", "{7460147A-08F5-486C-9DC4-4DDFCBBA3223}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTrees", "ExpressionTrees\ExpressionTrees.csproj", "{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,16 @@ Global
 		{7460147A-08F5-486C-9DC4-4DDFCBBA3223}.Release|Mixed Platforms.Build.0 = Release|x86
 		{7460147A-08F5-486C-9DC4-4DDFCBBA3223}.Release|x86.ActiveCfg = Release|x86
 		{7460147A-08F5-486C-9DC4-4DDFCBBA3223}.Release|x86.Build.0 = Release|x86
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C0D1DBDE-D511-4BD2-8A60-ED2F5A675B5E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
